@@ -32,10 +32,10 @@ brew install git                                                                
 # Adding git aliases (https://github.com/thomaspoignant/gitalias)
 git clone https://github.com/thomaspoignant/gitalias.git $INSTALL_FOLDER/gitalias && echo -e "[include]\n    path = $INSTALL_FOLDER/gitalias/.gitalias\n$(cat ~/.gitconfig)" > ~/.gitconfig
 
-brew install git-secrets                                                                              # git hook to check if you are pushing aws secret (https://github.com/awslabs/git-secrets)
-git secrets --register-aws --global
-git secrets --install ~/.git-templates/git-secrets
-git config --global init.templateDir ~/.git-templates/git-secrets
+# brew install git-secrets                                                                              # git hook to check if you are pushing aws secret (https://github.com/awslabs/git-secrets)
+# git secrets --register-aws --global
+# git secrets --install ~/.git-templates/git-secrets
+# git config --global init.templateDir ~/.git-templates/git-secrets
 
 # ZSH
 brew install zsh zsh-completions                                                                      # Install zsh and zsh completions
@@ -123,14 +123,6 @@ sdk install java
 brew install maven
 brew install gradle
 
-## golang
-{
-  echo "# Go development"
-  echo "export GOPATH=\"\${HOME}/.go\""
-  echo "export GOROOT=\"\$(brew --prefix golang)/libexec\""
-  echo "export PATH=\"\$PATH:\${GOPATH}/bin:\${GOROOT}/bin\""
-}>>$MAC_SETUP_PROFILE
-brew install go
 
 ## python
 echo "export PATH=\"/usr/local/opt/python/libexec/bin:\$PATH\"" >> $MAC_SETUP_PROFILE
