@@ -160,7 +160,8 @@ brew install docker-machine-completion
 brew install awscli # Official command line
 pip3 install saws    # A supercharged AWS command line interface (CLI).
 
-# GCP 
+#office 
+brew install --cask microsoft-office
 
 # K8S command line
 brew install kubectx
