@@ -41,7 +41,6 @@ docker run -d -p 8080:8080 -v ~/repos/airflow-dags:/usr/local/airflow/dags  puck
 docker pull puckel/docker-airflow
 mkdir -p ~/repos/airflow-dags
 curl https://raw.githubusercontent.com/vishalsatam/Data-Pipelining/master/Airflow/AirflowDemo/Helloworld.py -o ~/repos/airflow-dags/dag.py
-
 docker run -d -p 8080:8080 -v ~/repos/airflow-dags:/usr/local/airflow/dags  puckel/docker-airflow webserver
 
 ```
